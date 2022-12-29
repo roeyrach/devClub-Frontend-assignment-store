@@ -1,0 +1,16 @@
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/styles.css ***!
+  \*************************************************************************/
+.header {
+	border: 3px solid black;
+	width: 98%;
+	height: 1.5em;
+	text-align: center;
+	padding: 1em;
+}
+.catalog {
+	border: 3px solid black;
+	width: 98%;
+	padding: 1em;
+}
+
