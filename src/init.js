@@ -78,16 +78,4 @@ function loadProducts(products) {
 	})
 }
 
-// function removeAllChildNodes(parentNode) {
-// 	while (parentNode.firstChild) {
-// 		parentNode.removeChild(parentNode.firstChild)
-// 	}
-// }
-// const btn = document.getElementById("btn")
-// btn.addEventListener("click", () => {
-// 	console.log("hello")
-// 	let parentNode = document.getElementById("catalog")
-// 	removeAllChildNodes(parentNode)
-// })
-
 module.exports = loadProducts
