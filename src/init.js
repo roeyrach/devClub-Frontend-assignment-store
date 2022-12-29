@@ -1,5 +1,6 @@
 function loadProducts(products) {
 	const cartArray = []
+	let sum = 0
 	products.forEach((product) => {
 		const productDiv = document.createElement("div")
 		productDiv.className = "product-div"
@@ -37,6 +38,10 @@ function loadProducts(products) {
 			if (flag === true) {
 				const hi = document.getElementById(product.id).children[3]
 				hi.innerHTML = "x" + inc
+				const total = document.getElementById("total-sum")
+				sum += product.price
+				console.log(sum)
+				total.innerHTML = sum + "₪"
 			} else {
 				cartArray.push(product.id)
 				const cartProductDiv = document.createElement("div")
@@ -59,10 +64,13 @@ function loadProducts(products) {
 				cartProductPrice.innerHTML = product.price + "₪"
 
 				const cartProductTimes = cartProductDiv.appendChild(
-					document.createElement("h6")
+					document.createElement("h4")
 				)
 				cartProductTimes.innerHTML = "x" + inc
-
+				const total = document.getElementById("total-sum")
+				sum += product.price
+				console.log(sum)
+				total.innerHTML = sum + "₪"
 				document.getElementById("cart").append(cartProductDiv)
 			}
 		})
