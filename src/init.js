@@ -1,6 +1,6 @@
+const cartArray = []
+let sum = 0
 function loadProducts(products) {
-	const cartArray = []
-	let sum = 0
 	products.forEach((product) => {
 		const productDiv = document.createElement("div")
 		productDiv.className = "product-div"
@@ -77,5 +77,17 @@ function loadProducts(products) {
 		document.getElementById("catalog").append(productDiv)
 	})
 }
+
+// function removeAllChildNodes(parentNode) {
+// 	while (parentNode.firstChild) {
+// 		parentNode.removeChild(parentNode.firstChild)
+// 	}
+// }
+// const btn = document.getElementById("btn")
+// btn.addEventListener("click", () => {
+// 	console.log("hello")
+// 	let parentNode = document.getElementById("catalog")
+// 	removeAllChildNodes(parentNode)
+// })
 
 module.exports = loadProducts

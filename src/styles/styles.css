@@ -38,13 +38,14 @@
 	height: auto;
 	border: 1px solid black;
 	text-align: center;
-	background-color: wheat;
+	background-color: rgb(219, 177, 221);
 	margin-left: 10em;
 }
 .total-amount {
 	border: 1px solid black;
 	position: relative;
 	bottom: 0;
+	border-radius: 0.5em;
 }
 .cart-image {
 	width: 5em;
