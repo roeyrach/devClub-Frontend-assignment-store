@@ -105,6 +105,7 @@ function loadProducts(products) {
 			}
 		})
 		document.getElementById("catalog").append(productDiv)
+		// hi
 	})
 }
 
