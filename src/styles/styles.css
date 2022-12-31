@@ -82,11 +82,12 @@
 	min-width: 15em;
 }
 .total-amount {
-	border: 1px solid black;
+	border: 3px solid rgb(75, 27, 120);
 	position: relative;
 	bottom: 0;
-	border-radius: 0.5em;
+	border-radius: 1.5em;
 	font-family: Helvetica;
+	background: linear-gradient(to bottom, rgb(105, 62, 145), rgb(213, 197, 228));
 	color: rgb(100, 31, 164);
 }
 #total-sum {
